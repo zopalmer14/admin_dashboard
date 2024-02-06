@@ -75,6 +75,12 @@ body {
     height: 100vh;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Header Styling */
 
 #header {
@@ -101,18 +107,35 @@ body {
 }
 
 #greeting-section {
-    
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 4fr;
+}
+
+#greeting-section > div {
+    border: 1px solid black;
+}
+
+#greeting-section img {
+    width: 75px;
+    height: 75px;
+    border-radius: 999px;
+}
+
+#greeting-section #greeting {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+#greeting-section #greeting strong {
+    font-size: 1.5rem;
 }
 
 #user-options {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-#user-options > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 1rem;
 }
 
 #user-options button {
