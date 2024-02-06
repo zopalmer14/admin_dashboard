@@ -85,6 +85,8 @@ body {
 
 #header {
     background-color: var(--white-accent);
+    padding: 0 4rem;
+
     display: grid;
     grid-template: 1fr 2fr / 5fr 3fr;
 
@@ -97,22 +99,56 @@ body {
 }
 
 #search-section {
-/*     grid-row: 1;
-    grid-column: 1 / 6; */
+    /* display: grid;
+    grid-template-columns: minmax(50px, 1fr) 9fr; */
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#search-section img {
+    width: 25px;
+}
+
+#search-section input {
+    width: 75ch;
+    padding: 0.5rem 1rem;
+    background-color: var(--gray-accent);
+    border: none;
+    border-radius: 999px;
+}
+
+#search-section input:focus {
+    outline: none;
+    border: 1px solid var(--blue-accent);
 }
 
 #logo-section {
-/*     grid-row: 1;
-    grid-column: 6 / 9; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+    gap: 2.5rem;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#logo-section #logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+}
+
+#logo-section #bell {
+    width: 25px;
 }
 
 #greeting-section {
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) 4fr;
-}
-
-#greeting-section > div {
-    border: 1px solid black;
+    grid-template-columns: 75px 4fr;
+    gap: 2rem;
 }
 
 #greeting-section img {
@@ -133,17 +169,21 @@ body {
 }
 
 #user-options {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #user-options button {
+    width: 6rem;
+    padding: 0.75rem 0;
+
     background-color: var(--blue-accent);
-    color: var(--white-accent);
-    padding: 1rem 2rem;
     border: none;
     border-radius: 999px;
+
+    font-weight: bold;
+    color: var(--white-accent);
 }
 
 #user-options button:hover {
