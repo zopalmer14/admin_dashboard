@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="dynamic.js" defer></script>
 </head>
 <body>
     <div id="screen-container">
@@ -14,20 +13,24 @@
                 <img src="magnify.svg" alt="Search">
                 <input type="text" name="search-bar" id="search-bar">
             </div>
+
             <div id="logo-section">
-                <img id="bell" src="bell-ring.svg" alt="Search">
-                <img id="logo" src="neom-unsplash-orig.jpg" alt="Search">
+                <img id="bell" src="bell-ring.svg" alt="Bell">
+                <img id="logo" src="neom-unsplash-orig.jpg" alt="Logo">
                 <div>Morgan Oakley</div>
             </div>
+
             <div id="greeting-section">
-                <div class="flex-center">
+                <div class="icon-container">
                     <!-- Photo by NEOM on Unsplash -->
-                    <img class="icon" src="neom-unsplash-orig.jpg" alt="Logo">
+                    <img src="neom-unsplash-orig.jpg" alt="Logo">
                 </div>
+
                 <div id="greeting">
                     <p>Hi there,<br><strong>Morgan Oakley (@morgan)</strong></p>
                 </div>
             </div>
+
             <div id="user-options">
                 <button>New</button>
                 <button>Upload</button>
@@ -35,8 +38,82 @@
             </div>
         </div>
 
-        <div id="sidebar">
-            Dashboard
+        <div id="sidebar">            
+            <div id="dashboard">
+                <div class="icon-container">
+                    <img src="icons/account-group.svg" alt="Mosaic">
+                </div>
+                <div class="text-container">
+                    Dashboard
+                </div>
+            </div>
+
+            <div id="nav-section">
+                <div class="icon-container">
+                    <img src="icons/home.svg" alt="Home">
+                </div>
+                <div class="text-container">
+                    Home
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/card-account-details-outline.svg" alt="Profile">
+                </div>
+                <div class="text-container">
+                    Profile
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/message.svg" alt="Messages">
+                </div>
+                <div class="text-container">
+                    Messages
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/clock-time-four.svg" alt="Clock">
+                </div>
+                <div class="text-container">
+                    History
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/note-multiple.svg" alt="Paper">
+                </div>
+                <div class="text-container">
+                    Tasks
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/account-group.svg" alt="People">
+                </div>
+                <div class="text-container">
+                    Communities
+                </div>
+            </div>
+
+            <div id="help-section">
+                <div class="icon-container">
+                    <img src="icons/account-group.svg" alt="Gear">
+                </div>
+                <div class="text-container">
+                    Settings
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/account-group.svg" alt="Question Mark">
+                </div>
+                <div class="text-container">
+                    Support
+                </div>
+
+                <div class="icon-container">
+                    <img src="icons/account-group.svg" alt="Badge">
+                </div>
+                <div class="text-container">
+                    Privacy
+                </div>
+            </div>
         </div>
 
         <div id="main-content">

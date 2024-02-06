@@ -55,8 +55,8 @@ table {
 
 :root {
     --white-accent: white;
-    --gray-accent: lightgray;
-    --blue-accent: blue;
+    --gray-accent: whitesmoke;
+    --blue-accent: #318CE7;
     --yellow-accent: yellow;
 }
 
@@ -75,7 +75,7 @@ body {
     height: 100vh;
 }
 
-.flex-center {
+.icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,16 +86,13 @@ body {
 #header {
     background-color: var(--white-accent);
     padding: 0 4rem;
+    padding-top: 0.5rem;
 
     display: grid;
     grid-template: 1fr 2fr / 5fr 3fr;
 
     grid-row: 1;
     grid-column: 2;
-}
-
-#header > div {
-    border: 1px solid black;
 }
 
 #search-section {
@@ -112,7 +109,9 @@ body {
 }
 
 #search-section input {
-    width: 75ch;
+    max-width: 100ch;
+    flex: 1 1 0;
+
     padding: 0.5rem 1rem;
     background-color: var(--gray-accent);
     border: none;
@@ -170,12 +169,13 @@ body {
 
 #user-options {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    gap: 2rem;
 }
 
 #user-options button {
-    width: 6rem;
+    width: 7rem;
     padding: 0.75rem 0;
 
     background-color: var(--blue-accent);
@@ -194,9 +194,50 @@ body {
 /* Sidebar Styling */
 
 #sidebar {
+    color: var(--white-accent);
+    font-size: 1.5rem;
+    font-family: bold;
+
     background-color: var(--blue-accent);
+    padding-bottom: 30vh;
+
+    display: grid;
+    grid-template-rows: 2fr 6fr 3fr;
+    gap: 4rem;
+
     grid-row: 1 / 3;
     grid-column: 1;
+}
+
+#sidebar > div {
+    border: 1px solid black;
+}
+
+#sidebar img {
+    width: 25px;
+}
+
+#sidebar .text-container {
+    display: flex;
+    align-items: center;
+}
+
+#dashboard {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 0.5rem;
+}
+
+#nav-section {
+    display: grid;
+    grid-template: repeat(6, 1fr) / 50px 1fr;
+    column-gap: 0.5rem;
+}
+
+#help-section {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 50px 1fr;
+    column-gap: 0.5rem;
 }
 
 /* Main Section Styling */
