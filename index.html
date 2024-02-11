@@ -7,218 +7,330 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="screen-container">
-        <div id="header">
-            <div id="search-section">
-                <img src="magnify.svg" alt="Search">
-                <input type="text" name="search-bar" id="search-bar">
+    <div id="header">
+        <div id="search-section">
+            <img src="magnify.svg" alt="Search">
+            <input type="text" name="search-bar" id="search-bar">
+        </div>
+
+        <div id="logo-section">
+            <img id="bell" src="bell-ring.svg" alt="Bell">
+            <img id="logo" src="neom-unsplash-orig.jpg" alt="Logo">
+            <div>Morgan Oakley</div>
+        </div>
+
+        <div id="greeting-section">
+            <div class="icon-container">
+                <!-- Photo by NEOM on Unsplash -->
+                <img src="neom-unsplash-orig.jpg" alt="Logo">
             </div>
 
-            <div id="logo-section">
-                <img id="bell" src="bell-ring.svg" alt="Bell">
-                <img id="logo" src="neom-unsplash-orig.jpg" alt="Logo">
-                <div>Morgan Oakley</div>
+            <div id="greeting">
+                <p>Hi there,<br><strong>Morgan Oakley (@morgan)</strong></p>
+            </div>
+        </div>
+
+        <div id="user-options">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
+    </div>
+
+    <div id="sidebar">            
+        <div id="dashboard">
+            <div class="icon-container">
+                <img src="icons/account-group.svg" alt="Mosaic">
+            </div>
+            <div class="text-container">
+                <div>Dashboard</div>
+            </div>
+        </div>
+
+        <div id="nav-section">
+            <div class="icon-container">
+                <img src="icons/home.svg" alt="Home">
+            </div>
+            <div class="text-container">
+                <div>Home</div>
             </div>
 
-            <div id="greeting-section">
+            <div class="icon-container">
+                <img src="icons/card-account-details-outline.svg" alt="Profile">
+            </div>
+            <div class="text-container">
+                <div>Profile</div>
+            </div>
+
+            <div class="icon-container">
+                <img src="icons/message.svg" alt="Messages">
+            </div>
+            <div class="text-container">
+                <div>Messages</div>
+            </div>
+
+            <div class="icon-container">
+                <img src="icons/clock-time-four.svg" alt="Clock">
+            </div>
+            <div class="text-container">
+                <div>History</div>
+            </div>
+
+            <div class="icon-container">
+                <img src="icons/note-multiple.svg" alt="Paper">
+            </div>
+            <div class="text-container">
+                <div>Tasks</div>
+            </div>
+
+            <div class="icon-container">
+                <img src="icons/account-group.svg" alt="People">
+            </div>
+            <div class="text-container">
+                <div>Communities</div>
+            </div>
+        </div>
+
+        <div id="help-section">
+            <div class="icon-container">
+                <img src="icons/account-group.svg" alt="Gear">
+            </div>
+            <div class="text-container">
+                <div>Settings</div>
+            </div>
+
+            <div class="icon-container">
+                <img src="icons/account-group.svg" alt="Question Mark">
+            </div>
+            <div class="text-container">
+                <div>Support</div>
+            </div>
+
+            <div class="icon-container">
+                <img src="icons/account-group.svg" alt="Badge">
+            </div>
+            <div class="text-container">
+                <div>Privacy</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="project-portfolio">
+            <div class="section-title">Your Projects</div>
+
+            <div id="project-grid">
+                <div class="project-tile">
+                    <p>
+                        <strong>Super Cool Project</strong><br>
+                        Lorem ipsum dolor sit amet, no similique comprehensam ius. 
+                        Ei qui audire feugait...
+                    </p>
+
+                    <div class="project-options">
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <p>
+                        <strong>Less Cool Project</strong><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Eius quibusdam expedita non, saepe possimus eligendi deleniti 
+                        obcaecati deserunt, error ut, accusantium similique est tempora. 
+                        Nostrum unde accusantium officia totam iusto?
+                    </p>
+
+                    <div class="project-options">
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <p>
+                        <strong>Impossible App</strong><br>
+                        Lorem ipsum dolor sit amet, no similique comprehensam ius. 
+                        Ei qui audire feugait, corpora atomorum prodesset cu quo...
+                    </p>
+
+                    <div class="project-options">
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <p>
+                        <strong>Easy Peasy App</strong><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Eius quibusdam expedita non, saepe possimus eligendi deleniti 
+                        obcaecati deserunt, error ut, accusantium similique est tempora...
+                    </p>
+
+                    <div class="project-options">
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <p>
+                        <strong>Ad Blocker</strong><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Eius quibusdam expedita non, saepe possimus eligendi deleniti 
+                        obcaecati deserunt...
+                    </p>
+
+                    <div class="project-options">
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <p>
+                        <strong>Money Maker</strong><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Eius quibusdam expedita non, saepe possimus eligendi deleniti 
+                        obcaecati deserunt, error ut, accusantium similique est tempora. 
+                        Nostrum unde accusantium officia totam iusto?
+                    </p>
+
+                    <div class="project-options">
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="icons/account-group.svg" alt="Badge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="announcement-section">
+            <div class="section-title">Announcements</div>
+
+            <div id="announcement-list">
+                <div>
+                    <p>
+                        <strong>Site Maintenance</strong><br>
+                        Lorem ipsum dolor sit amet, no similique comprehensam ius. 
+                        Ei qui audire feugait, corpora atomorum prodesset cu quo... 
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <strong>Community Share Day</strong><br>
+                        Lorem ipsum dolor sit amet, no similique comprehensam ius. 
+                        Ei qui audire feugait...
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <strong>Updated Privacy Policy</strong><br>
+                        Lorem ipsum dolor sit amet, no similique comprehensam ius...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trending-section">
+            <div class="section-title">Trending</div>
+
+            <div id="trending-list">
                 <div class="icon-container">
-                    <!-- Photo by NEOM on Unsplash -->
                     <img src="neom-unsplash-orig.jpg" alt="Logo">
                 </div>
-
-                <div id="greeting">
-                    <p>Hi there,<br><strong>Morgan Oakley (@morgan)</strong></p>
-                </div>
-            </div>
-
-            <div id="user-options">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
-        </div>
-
-        <div id="sidebar">            
-            <div id="dashboard">
-                <div class="icon-container">
-                    <img src="icons/account-group.svg" alt="Mosaic">
-                </div>
                 <div class="text-container">
-                    Dashboard
-                </div>
-            </div>
-
-            <div id="nav-section">
-                <div class="icon-container">
-                    <img src="icons/home.svg" alt="Home">
-                </div>
-                <div class="text-container">
-                    Home
+                    <p>
+                        <strong>@tegan</strong><br>
+                        World Peace Builder
+                    </p>
                 </div>
 
                 <div class="icon-container">
-                    <img src="icons/card-account-details-outline.svg" alt="Profile">
+                    <img src="neom-unsplash-orig.jpg" alt="Logo">
                 </div>
                 <div class="text-container">
-                    Profile
-                </div>
-
-                <div class="icon-container">
-                    <img src="icons/message.svg" alt="Messages">
-                </div>
-                <div class="text-container">
-                    Messages
-                </div>
-
-                <div class="icon-container">
-                    <img src="icons/clock-time-four.svg" alt="Clock">
-                </div>
-                <div class="text-container">
-                    History
-                </div>
-
-                <div class="icon-container">
-                    <img src="icons/note-multiple.svg" alt="Paper">
-                </div>
-                <div class="text-container">
-                    Tasks
-                </div>
-
-                <div class="icon-container">
-                    <img src="icons/account-group.svg" alt="People">
-                </div>
-                <div class="text-container">
-                    Communities
-                </div>
-            </div>
-
-            <div id="help-section">
-                <div class="icon-container">
-                    <img src="icons/account-group.svg" alt="Gear">
-                </div>
-                <div class="text-container">
-                    Settings
-                </div>
-
-                <div class="icon-container">
-                    <img src="icons/account-group.svg" alt="Question Mark">
-                </div>
-                <div class="text-container">
-                    Support
-                </div>
-
-                <div class="icon-container">
-                    <img src="icons/account-group.svg" alt="Badge">
-                </div>
-                <div class="text-container">
-                    Privacy
-                </div>
-            </div>
-        </div>
-
-        <div id="main-content">
-            <div id="project-portfolio">
-                <div>Your Projects</div>
-
-                <div id="project-grid">
-                    <div>
+                    <p>
+                        <strong>@morgan</strong><br>
                         Super Cool Project
-                    </div>
-
-                    <div>
-                        Less Cool Project
-                    </div>
-
-                    <div>
-                        Impossible App
-                    </div>
-
-                    <div>
-                        Easy Peasy App
-                    </div>
-
-                    <div>
-                        Ad Blocker
-                    </div>
-
-                    <div>
-                        Money Maker
-                    </div>
+                    </p>
                 </div>
-            </div>
 
-            <div id="announcement-section">
-                <div>Announcements</div>
-
-                <div id="announcement-list">
-                    <div>
-                        <p>
-                            <strong>Site Maintenance</strong><br>
-                            Lorem ipsum dolor sit amet, no similique comprehensam ius. 
-                            Ei qui audire feugait, corpora atomorum prodesset cu quo... 
-                        </p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <strong>Community Share Day</strong><br>
-                            Lorem ipsum dolor sit amet, no similique comprehensam ius. 
-                            Ei qui audire feugait...
-                        </p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <strong>Updated Privacy Policy</strong><br>
-                            Lorem ipsum dolor sit amet, no similique comprehensam ius...
-                        </p>
-                    </div>
+                <div class="icon-container">
+                    <img src="neom-unsplash-orig.jpg" alt="Logo">
                 </div>
-            </div>
+                <div class="text-container">
+                    <p>
+                        <strong>@kendall</strong><br>
+                        Life Changing App
+                    </p>
+                </div>
 
-            <div id="trending-section">
-                <div>Trending</div>
-
-                <div id="trending-list">
-                    <div class="icon-container">
-                        <img src="neom-unsplash-orig.jpg" alt="Logo">
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            <strong>@tegan</strong><br>
-                            World Peace Builder
-                        </p>
-                    </div>
-
-                    <div class="icon-container">
-                        <img src="neom-unsplash-orig.jpg" alt="Logo">
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            <strong>@morgan</strong><br>
-                            Super Cool Project
-                        </p>
-                    </div>
-
-                    <div class="icon-container">
-                        <img src="neom-unsplash-orig.jpg" alt="Logo">
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            <strong>@kendall</strong><br>
-                            Life Changing App
-                        </p>
-                    </div>
-
-                    <div class="icon-container">
-                        <img src="neom-unsplash-orig.jpg" alt="Logo">
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            <strong>@alex</strong><br>
-                            No Traffic Maker
-                        </p>
-                    </div>
+                <div class="icon-container">
+                    <img src="neom-unsplash-orig.jpg" alt="Logo">
+                </div>
+                <div class="text-container">
+                    <p>
+                        <strong>@alex</strong><br>
+                        No Traffic Maker
+                    </p>
                 </div>
             </div>
         </div>
