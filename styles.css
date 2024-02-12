@@ -82,6 +82,20 @@ body {
     align-items: center;
 }
 
+.material-icons:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.25s;
+}
+
+.material-icons.md-36 { 
+    font-size: 36px; 
+}
+
+img:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.1s linear;
+}
+
 /* Header Styling */
 
 #header {
@@ -96,10 +110,7 @@ body {
     grid-column: 2;
 }
 
-#search-section {
-    /* display: grid;
-    grid-template-columns: minmax(50px, 1fr) 9fr; */
-    
+#search-section {    
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -139,10 +150,6 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 999px;
-}
-
-#logo-section #bell {
-    width: 25px;
 }
 
 #greeting-section {
@@ -212,8 +219,37 @@ body {
     grid-column: 1;
 }
 
+#sidebar .icon-container, .text-container {
+    padding-left: 0.5rem;
+}
+
+#sidebar .text-container:hover {
+    background-color: var(--white-accent);
+    color: var(--blue-accent);
+    transition: 0.25s;
+}
+
 #sidebar .text-container > div:hover {
-    border-bottom: 2px solid var(--white-accent);
+    transform: scale(1.05, 1.05);
+    transition: 0.25s;
+}
+
+#sidebar .icon-container:hover {
+    background-color: var(--white-accent);
+    color: var(--blue-accent);
+    transition: 0.25s;
+}
+
+#sidebar .icon-container:hover + .text-container {
+    background-color: var(--white-accent);
+    color: var(--blue-accent);
+    transition: 0.25s;
+}
+
+#sidebar .icon-container:has(+ .text-container:hover) {
+    background-color: var(--white-accent);
+    color: var(--blue-accent);
+    transition: 0.25s;
 }
 
 #sidebar img {
@@ -223,19 +259,16 @@ body {
 #dashboard {
     display: grid;
     grid-template-columns: 50px 1fr;
-    column-gap: 0.5rem;
 }
 
 #nav-section {
     display: grid;
     grid-template: repeat(6, 1fr) / 50px 1fr;
-    column-gap: 0.5rem;
 }
 
 #help-section {
     display: grid;
     grid-template: repeat(3, 1fr) / 50px 1fr;
-    column-gap: 0.5rem;
 }
 
 /* Main Section Styling */
@@ -293,9 +326,10 @@ body {
 }
 
 #project-grid .project-tile .project-options {
+    color: black;
     display: grid;
     grid-template-columns: repeat(3, 30px);
-    gap: 2rem;
+    gap: 1rem;
     align-self: flex-end;
 }
 
